@@ -80,6 +80,11 @@ body {
   cursor: pointer;
 }
 
+.search-box button.load {
+  transform: rotate(360deg);
+  transition: transform .4s ease;
+}
+
 .weather-box {
   text-align: center;
   margin: 40px 0;

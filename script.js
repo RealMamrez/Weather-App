@@ -5,6 +5,15 @@ const weatherDetails = document.querySelector('.weather-details');
 const error404 = document.querySelector('.not-found');
 const cityHide = document.querySelector('.city-hide');
 
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
+
+function clickLoad() {
+    search.classList.add('load');
+    sleep(1000).then(() => { search.classList.remove('load'); });
+}
+
 
 search.addEventListener('click', () => {
 
