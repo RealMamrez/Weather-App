@@ -12,7 +12,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: url(./images/background.jpg);
+  background: url(./images/background.jpeg);
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -78,11 +78,18 @@ body {
   color: #fff;
   padding: 0 40px 0 5px;
   cursor: pointer;
+  transform: none ;
+}
+
+.search-box button:hover {
+  transition: all .4s ease;
+  transform: rotate(0deg) scale(1.2);
 }
 
 .search-box button.load {
-  transform: rotate(360deg);
-  transition: transform .4s ease;
+  transform: scale(1);
+  transform: rotate(360deg) scale(1);
+  transition: all .4s ease;
 }
 
 .weather-box {
