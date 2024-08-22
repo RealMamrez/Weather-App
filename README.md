@@ -1,4 +1,4 @@
-# Weather App! v.1
+# Weather App! v.1.2
 
 A **weather website** developed with HTML, CSS and JavaScript!
 
