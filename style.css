@@ -18,17 +18,29 @@ body {
   overflow: hidden;
 }
 
+body.dark-mode {
+  background: url(./images/background-night.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
 .container {
   position: relative;
   width: 400px;
   height: 100px;
-  background: rgba(255, 255, 255, .1);
+  background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(30px);
   border: 2px solid rgba(255, 255, 255, .2);
   border-radius: 16px;
   padding: 20px;
   color: #fff;
   transition: height .6s ease;
+}
+
+.container.dark-mode {
+  /* color: #121212; */
+  /* background: rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(0, 0, 0, 0.2); */
 }
 
 .search-box {
@@ -61,9 +73,18 @@ body {
   padding: 0 48px 0 42px;
 }
 
+.search-box input.dark-mode {
+  /* color: #121212; */
+  /* border: 2px solid rgba(0, 0, 0, 0.2); */
+}
+
 .search-box input::placeholder {
   color: #fff;
   text-transform: capitalize;
+}
+
+.search-box input.dark-mode::placeholder {
+  /* color: #121212; */
 }
 
 .search-box button {
@@ -79,6 +100,10 @@ body {
   padding: 0 40px 0 5px;
   cursor: pointer;
   transform: none ;
+}
+
+.search-box button.dark-mode {
+  /* color: #121212; */
 }
 
 .search-box button:hover {
@@ -268,4 +293,84 @@ body {
 .active-clone#clone-info-humidity span,
 .active-clone#clone-info-wind span {
   transform: translateY(0%);
+}
+
+/* Toggle BTN */
+
+.toggle-btn label {
+  left: 30px;
+  top: 30px;
+  position: absolute;
+	width:150px;
+	height:60px;
+	display: block;
+	background: #ebebeb;
+	border-radius: 200px;
+	box-shadow: inset 0px 5px 15px rgba(0,0,0,0.4), inset 0px -5px 15px rgba(255,255,255,0.4);
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.toggle-btn label:after {
+	content: "";
+	width:54px;
+	height: 54px;
+	position: absolute;
+	top:3px;
+	left:4px;
+	background: linear-gradient(180deg,#ffcc89,#d8860b);
+	border-radius: 180px;
+	box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+	transition: 0.3s;
+}
+
+.toggle-btn input {
+	width: 0;
+	height: 0;
+	visibility: hidden;
+}
+
+.toggle-btn input:checked + label {
+	background: #242424;
+}
+
+.toggle-btn input:checked + label:after {
+	left:147px;
+	transform: translateX(-100%);
+	background: linear-gradient(180deg,#777,#3a3a3a);
+}
+
+.toggle-btn label:active:after{
+	width: 80px;
+}
+
+.toggle-btn input:checked + label {
+	background:#242424;
+}
+
+.toggle-btn label svg {
+	position: absolute;
+	width: 36px;
+	top: 12px;
+	z-index: 100;
+}
+
+.toggle-btn label svg.sun {
+	left:13px;
+	fill:#fff;
+	transition: 0.3s;
+}
+
+.toggle-btn label svg.moon {
+	left:105px;
+	fill:#7e7e7e;
+	transition: 0.3s;
+}
+
+.toggle-btn input:checked + label svg.sun {
+	fill:#7e7e7e;
+}
+
+.toggle-btn input:checked + label svg.moon {
+	fill:#fff;
 }

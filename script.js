@@ -14,6 +14,15 @@ function clickLoad() {
     sleep(1000).then(() => { search.classList.remove('load'); });
 }
 
+function clickTheme() {
+    const placeholder = document.querySelector('.search-box input')
+    const body = document.querySelector('body')
+
+    container.classList.toggle('dark-mode');
+    search.classList.toggle('dark-mode');
+    placeholder.classList.toggle('dark-mode');
+    body.classList.toggle('dark-mode');
+}
 
 search.addEventListener('click', () => {
 
