@@ -1,5 +1,4 @@
 export let names = [
-
     
 "TOKYO",
 "JAKARTA",
