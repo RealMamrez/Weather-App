@@ -1,4 +1,4 @@
-const cityName = [
+export let names = [
     
 "TOKYO",
 "JAKARTA",
