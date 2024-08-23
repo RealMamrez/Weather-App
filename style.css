@@ -287,20 +287,34 @@ ul {
 .list {
   width: 100%;
   border-radius: 0 0 13px 13px;
-  color: #121212;s
+  color: #121212;
 }
 
 .list-items {
   padding: 10px 13px;
+  transition: all .5s ease;
+}
+
+.list-items::before {
+  font-family: 'FontAwesome';
+  content: "\f3c5  ";
+  color: #121212b2;
+  padding-right: 5px;
+  transition: all .5s ease;
 }
 
 .list-items:hover {
   background-color: #00b3ff21;
   color: #121212;
-  transform: translateX(10px);
+  padding-left: 20px;
+  transition: all .5s ease;
+}
+
+.list-items:hover::before {
+  color: #121212;
   transition: all .5s ease;
 }
 
 li:nth-of-type(1n+6) {
   display: none;
-} 
+}

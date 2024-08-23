@@ -1,10 +1,16 @@
-# Weather App! v.1.2
+# Weather App! v.1.4
 
 A **weather website** developed with HTML, CSS and JavaScript!
 
+# Changes
+
+- Adding city name autocomplate -v1.4
+- Adding some changes in showing city name -v1.4
+- Some BUG fixing -1.4
+
 # Screen Shots!
 
-![ُScreenshot of Weather App app](https://i.ibb.co/GFnKb4F/Untitled-2-Recovered-copy.png)
+![video](./images/README.mp4)
 
 ## Run
 
@@ -22,3 +28,4 @@ If you have any feedback, please reach to me at me@the-mamrez.ir
 
 ## Authors  
 - [@RealMamrez](https://www.github.com/RealMamrez)  
+- Tanks [Foade Barhimi](https://www.linkedin.com/in/foadebarhimi/) for some idea!

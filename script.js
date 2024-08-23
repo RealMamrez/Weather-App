@@ -3,7 +3,7 @@ const search = document.querySelector('.search-box button');
 const weatherBox = document.querySelector('.weather-box');
 const weatherDetails = document.querySelector('.weather-details');
 const error404 = document.querySelector('.not-found');
-const cityHide = document.querySelector('.city-hide');
+const cityHide = document.querySelector('.city-hide')
 
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
@@ -39,6 +39,8 @@ search.addEventListener('click', () => {
         const description = document.querySelector('.weather-box .description');
         const wind = document.querySelector('.weather-details .wind span');
         const humidity = document.querySelector('.weather-details .humidity span');
+        const shahr = document.querySelector('.weather-box .city-name')
+
 
         if (cityHide.textContent == city) {
             return;
@@ -87,6 +89,7 @@ search.addEventListener('click', () => {
     
             temperature.innerHTML = `${parseInt(json.main.temp)}<span>°С</span>`;
             description.innerHTML = `${json.weather[0].description}`;
+            shahr.innerHTML = `${json.sys.country}<span>, </span>${json.name}`
             humidity.innerHTML = `${json.main.humidity}%`;
             wind.innerHTML = `${parseInt(json.wind.speed)}Km/h`;
 
