@@ -3,7 +3,11 @@ const search = document.querySelector('.search-box button');
 const weatherBox = document.querySelector('.weather-box');
 const weatherDetails = document.querySelector('.weather-details');
 const error404 = document.querySelector('.not-found');
-const cityHide = document.querySelector('.city-hide')
+const cityHide = document.querySelector('.city-hide');
+const githubSrc = document.querySelector('.github-src');
+
+githubSrc.classList.toggle('loaded');
+
 
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
