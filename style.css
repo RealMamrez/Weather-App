@@ -269,3 +269,28 @@ body {
 .active-clone#clone-info-wind span {
   transform: translateY(0%);
 }
+
+
+
+
+
+ul {
+  list-style: none;
+  position: absolute;
+  top: 115px;
+  position: relative;
+  background: rgba(255, 255, 255, 0.358);
+  backdrop-filter: blur(30px);
+}
+.list {
+  width: 100%;
+  border-radius: 0 0 5px 5px;
+  color: #121212;
+}
+.list-items {
+  padding: 10px 5px;
+}
+.list-items:hover {
+  background-color: #12121215;
+  color: #fff;
+}
