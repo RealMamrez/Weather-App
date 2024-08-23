@@ -277,15 +277,15 @@ body {
 ul {
   list-style: none;
   position: absolute;
-  top: 115px;
-  position: relative;
+  top: 53px;
   background: rgba(255, 255, 255, 0.358);
   backdrop-filter: blur(30px);
+  z-index: 1000;
 }
 .list {
   width: 100%;
   border-radius: 0 0 5px 5px;
-  color: #121212;
+  color: #121212;s
 }
 .list-items {
   padding: 10px 5px;
