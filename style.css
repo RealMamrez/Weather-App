@@ -272,7 +272,10 @@ body {
 
 
 
-
+.search-box input.opene {
+  border-bottom: none;
+  border-radius: 10px 10px 0 0;
+}
 
 ul {
   list-style: none;
@@ -285,21 +288,19 @@ ul {
 
 .list {
   width: 100%;
-  border-radius: 0 0 18px 18px;
+  border-radius: 0 0 13px 13px;
   color: #121212;s
 }
 
 .list-items {
-  padding: 10px 5px;
-}
-
-.list.list-items::before {
-  content: "\ee17";
+  padding: 10px 13px;
 }
 
 .list-items:hover {
   background-color: #00b3ff21;
   color: #121212;
+  transform: translateX(10px);
+  transition: all .5s ease;
 }
 
 li:nth-of-type(1n+6) {

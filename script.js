@@ -48020,6 +48020,7 @@ let names = [
     //Initially remove all elements ( so if user erases a letter or adds new letter then clean previous outputs)
     removeElements();
     for (let i of sortedNames) {
+        input.classList.toggle("opene")
       //convert input to lowercase and compare with each string
       if (
         i.toLowerCase().startsWith(input.value.toLowerCase()) &&
@@ -48041,6 +48042,7 @@ let names = [
     }
   });
   function displayNames(value) {
+    input.classList.remove("opene")
     input.value = value;
     removeElements();
   }
