@@ -295,8 +295,6 @@ body.dark-mode {
   transform: translateY(0%);
 }
 
-/* Toggle BTN */
-
 .toggle-btn label {
   left: 30px;
   top: 30px;
@@ -373,4 +371,70 @@ body.dark-mode {
 
 .toggle-btn input:checked + label svg.moon {
 	fill:#fff;
+}
+
+.search-box input.opene {
+  border-bottom: none;
+  border-radius: 10px 10px 0 0;
+}
+
+ul {
+  list-style: none;
+  position: absolute;
+  top: 53px;
+  background: rgba(255, 255, 255, 0.721);
+  backdrop-filter: blur(30px);
+  z-index: 1000;
+}
+
+.list {
+  width: 100%;
+  border-radius: 0 0 13px 13px;
+  color: #121212;
+}
+
+.list.night {
+  color: #F2F2F2;
+  background: rgba(0, 0, 0, 0.721);
+}
+
+.list-items {
+  padding: 10px 13px;
+  transition: all .5s ease;
+}
+
+.list-items::before {
+  font-family: 'FontAwesome';
+  content: "\f3c5  ";
+  color: #121212b2;
+  padding-right: 5px;
+  transition: all .5s ease;
+}
+
+.night::before {
+  color: #F2F2F2b2;
+}
+
+.list-items:hover {
+  background-color: #00b3ff21;
+  color: #121212;
+  padding-left: 20px;
+  transition: all .5s ease;
+}
+
+.list-items.night:hover {
+  color: #F2F2F2;
+}
+
+.list-items:hover::before {
+  color: #121212;
+  transition: all .5s ease;
+}
+
+.list-items:hover::before.night {
+  color: #F2F2F2;
+}
+
+li:nth-of-type(1n+6) {
+  display: none;
 }

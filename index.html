@@ -8,6 +8,7 @@
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/eb887e5453.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -57,8 +58,14 @@
     <div class="container">
         <div class="search-box">
             <i class='bx bxs-map'></i>
-            <input type="text" placeholder="enter your location">
+            <input type="text" placeholder="enter your location" id="searchInput" autocomplete="off">
+            <ul class="list">
+                <li class="list-itmes"></li>
+                <li class="list-itmes"></li>
+                <li class="list-itmes"></li>
+            </ul>
             <button id="search" class="bx bx-search" onclick="clickLoad()"></button>
+            
         </div>
 
         <p class="city-hide">city hide</p>
@@ -70,6 +77,7 @@
                         <img class="img" src="images/cloud.png">
                         <p class="temperature">0<span>°С</span></p>
                         <p class="description">Broken Clouds</p>
+                        <p class="city-name">IR<span>, </span>Babolsar</p>
                     </div>
                 </div>
             </div>
