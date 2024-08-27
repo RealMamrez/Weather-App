@@ -18,6 +18,10 @@ function clickLoad() {
     sleep(1000).then(() => { search.classList.remove('load'); });
 }
 
+function clickRight() {
+    
+}
+
 
 search.addEventListener('click', () => {
 

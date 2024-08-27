@@ -344,3 +344,53 @@ li:nth-of-type(1n+6) {
   text-decoration: none !important;
   color: #F2F2F2 !important;
 }
+
+.right-arrow p{
+  display: none;
+  font-size: 18px;
+  z-index: 100000000;
+  position: absolute;
+  top: 321px;
+  right: 45px;
+}
+
+.ar-right {
+  font-size: 64px;
+  z-index: 100000000;
+  position: absolute;
+  top: 305px;
+  right: 10px;
+  opacity: .8;
+  transition: all .5s ease;
+}
+
+.ar-right:hover {
+  opacity: 1;
+  transform: scale(1.2) translateX(10px);
+  transition: all .5s ease;
+}
+
+/* .ar-right:hover + .right-arrow p{
+  color: red;
+} */
+
+#a:hover + #b {
+  display: block;
+  transition: all .5s ease;
+}
+
+.ar-left {
+  font-size: 64px;
+  z-index: 100000000;
+  position: absolute;
+  top: 305px;
+  left: 10px;
+  opacity: .2;
+  transition: all .5s ease;
+}
+
+.ar-left:hover {
+  opacity: 1;
+  transform: scale(1.2) translateX(-10px);
+  transition: all .5s ease;
+}

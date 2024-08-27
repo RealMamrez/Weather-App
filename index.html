@@ -13,20 +13,28 @@
 
 <body>
 
-    <div class="container">
+    <div class="container active" style="height: 555px;">
+        <div class="right-arrow">    
+        <i class='bx bx-chevron-right ar-right' id="a" onclick="clickRight()"></i>
+        <p id="b">Tomorrow</p>
+        </div>
+        <div class="left-arrow">
+        <i class='bx bx-chevron-left ar-left'></i>
+        </div>
+
+        
         <div class="search-box">
             <i class='bx bxs-map'></i>
             <input type="text" placeholder="enter your location" id="searchInput" autocomplete="off">
             <ul class="list"></ul>
             <button id="search" class="bx bx-search" onclick="clickLoad()"></button>
-            
         </div>
 
         <p class="city-hide">city hide</p>
 
-        <div class="weather-box">
+        <div class="weather-box active">
             <div class="box">
-                <div class="info-weather">
+                <div class="info-weather active">
                     <div class="weather">
                         <img class="img" src="images/cloud.png">
                         <p class="temperature">0<span>°С</span></p>
@@ -37,7 +45,7 @@
             </div>
         </div>
 
-        <div class="weather-details">
+        <div class="weather-details active">
             <div class="humidity">
                 <i class='bx bx-water'></i>
                 <div class="text">
@@ -48,7 +56,7 @@
                 </div>
             </div>
 
-            <div class="wind">
+            <div class="wind active">
                 <i class='bx bx-wind'></i>
                 <div class="text">
                     <div class="info-wind">
@@ -68,9 +76,10 @@
     </div>
 
 
-    <div class="github-src">
+
+    <!-- <div class="github-src">
         <a href="https://github.com/RealMamrez/Weather-App" target="_blank">PROJECT GITHUB PAGE</a>
-    </div>
+    </div> -->
 
     <script src="script.js"></script>
 </body>
